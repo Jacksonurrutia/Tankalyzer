@@ -14,12 +14,12 @@ What would you do if just your mere presense caused all the fish inside you're f
 - Have the app find a signature for new equipment.
 ### As a user I want to see if the equipment on my fish tank is still running, so if it isn't I can fix it.
 #### Acceptance Criteria
-- Use If This Then That(IFTT) to send and email notification if a fish is not alive.
+- Use If This Then That(IFTTT) to send and email notification if a fish is not alive.
 - Have an indication that the equipment is still running.
 
 ### As a user I want to know if the fish in my fish tank are alive so I can replace non-alive fish.
 #### Acceptance Criteria
-- Use If This Then That(IFTT) to send and email notification if a fish is not alive.
+- Use If This Then That(IFTTT) to send and email notification if a fish is not alive.
 - Have an indicator of how many fish are alive.
 
 ## Misuser Stories
@@ -49,8 +49,8 @@ What would you do if just your mere presense caused all the fish inside you're f
 - Alalyses the collected data to determine if equipment on the fish tank is functioning
 ### MetaWear API
 - MetaWear API is used to collect accelerometer data from a paired MetaWear sensor.
-### If This Then That (IFTT) API
-- Ise the IFTT API to send an email notification if an event occours.
+### If This Then That (IFTTT) API
+- Ise the IFTTT API to send an email notification if an event occours.
 
 ## Security Analysis
 The app uses a number of different APIs that  allow for possible attack vectors that could impare the functionality of the app, or that could be used maliciously to send fake emails or give the app fake data.
@@ -61,5 +61,5 @@ The app uses a number of different APIs that  allow for possible attack vectors 
 | Component name | Category of vulnerability | Issue Description | Mitigation |
 |----------------|---------------------------|-------------------|------------|
 | MetaWear API | Unauthorized Access | A fake device can be connected to the mobile device such that the app would use the metawear API to collect data from the fake device | The app should only collect data from devices that is explicitly told to |
-| IFTT API | Unauthorized Access | This API for If This Then That sends email notifications to the user through the IFTT API, and if exploited can send erronious messages | The API key that IFTT uses should be stored securely so that it is unable to be misused|
+| IFTTT API | Unauthorized Access | This API for If This Then That sends email notifications to the user through the IFTTT API, and if exploited can send erronious messages | The API key that IFTTT uses should be stored securely so that it is unable to be misused|
 | User Settings | Code Injection | The user settings in the app such as email are a vector that could be used as an attack| User inputs need to be sanatized before it is used so that no malicious code is able to be run
