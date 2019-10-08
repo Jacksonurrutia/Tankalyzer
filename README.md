@@ -55,7 +55,7 @@ What would you do if just your mere presense caused all the fish inside you're f
 ## Security Analysis
 The app uses a number of different APIs that  allow for possible attack vectors that could impare the functionality of the app, or that could be used maliciously to send fake emails or give the app fake data.
 
-
+![Design Diagram](images/Diagram-jurrutia.PNG)
 
 
 | Component name | Category of vulnerability | Issue Description | Mitigation |
